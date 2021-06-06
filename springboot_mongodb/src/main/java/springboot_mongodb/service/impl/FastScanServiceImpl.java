@@ -20,10 +20,6 @@ public class FastScanServiceImpl extends BaseRunner implements FastScanService {
     private FastScanRepository fastScanRepository;
     @Autowired
     private MongoTemplate mongoTemplate;
-//    @Override
-//    public FastScan getByFastScanName(String name) {
-//        return fastScanRepository.getByName("test");
-//    }
 
     @Transactional
     @Override
