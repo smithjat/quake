@@ -1,5 +1,6 @@
 package springboot_mongodb.service.impl;
-import org.junit.Assert;
+import com.jayway.restassured.matcher.ResponseAwareMatcher;
+import com.jayway.restassured.response.Response;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -27,7 +28,6 @@ public class FastScanServiceTest extends BaseRunner {
     public void testFastScan() {
         GlobalVar.COOKIES.put("cert_common_dev", GlobalVar.COOKIE);
         response = fastScan.createtask("1.2.3.4","80");
-        System.out.println(response.getStatusCode());
-        Assert.assertSame(401,response.getStatusCode());
+//        response.then().body("1", (ResponseAwareMatcher<Response>) fastScanRepository.getByName("dd"));
     }
 }

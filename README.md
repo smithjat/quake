@@ -8,5 +8,3 @@ dao:读取mongodb数据，实现数据库级别校验
 service:业务接口定义，impl实现测试用例执行(涉及接口业务中的数据读写验证等)
 
 config:TestSuitsConfig打包测试
-
-
