@@ -7,5 +7,5 @@ import springboot_mongodb.service.impl.FastScanServiceTest;
 //@Ignore("not ready yet")
 @RunWith(Suite.class)
 @Suite.SuiteClasses({FastScanServiceTest.class})
-public class TestSuits {
+public class TestSuitsConfig {
 }
