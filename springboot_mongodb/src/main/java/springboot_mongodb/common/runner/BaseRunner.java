@@ -20,10 +20,13 @@ public abstract class BaseRunner {
 
     @BeforeClass
     public static void beforeClass() {
+        System.out.println("开始测试-----------------");
+
     }
 
     @AfterClass
     public static void afterClass() {
+        System.out.println("测试结束-----------------");
     }
 
     // 失败重试
