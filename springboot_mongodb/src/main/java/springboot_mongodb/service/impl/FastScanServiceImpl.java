@@ -13,7 +13,7 @@ import springboot_mongodb.dao.FastScanRepository;
 import springboot_mongodb.service.v3.FastScanService;
 
 @Service
-public class FastScanServiceImpl extends BaseRunner implements FastScanService {
+public class FastScanServiceImpl extends BaseRunner {
     private FastScanService fastScan = ProxyUtils.create(FastScanService.class);
 
     @Autowired
@@ -22,11 +22,6 @@ public class FastScanServiceImpl extends BaseRunner implements FastScanService {
     private MongoTemplate mongoTemplate;
 
     @Transactional
-    @Override
-    public Response createtask(String ip, String port) {
-        return null;
-    }
-
     @Test
     public void testFastScan() throws InterruptedException {
         GlobalVar.COOKIES.put("cert_common_dev", GlobalVar.COOKIE);

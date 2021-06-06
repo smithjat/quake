@@ -10,7 +10,6 @@ import springboot_mongodb.entity.FastScan;
 
 import javax.annotation.Resource;
 
-@Service
 @SERVER(GlobalVar.NOTIFY_SERVER)
 public interface FastScanService {
     @POST(path = "/api/v3/fast_scan",description = "快速扫描任务")
